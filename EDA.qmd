@@ -1,0 +1,57 @@
+---
+title: "Exploratory"
+author: 'Cherish'
+format: html
+---
+
+## Load package
+
+```{python}
+import pandas as pd
+```
+
+## Load dataset from smoker.csv file
+
+```{python}
+df = pd.read_csv('smoker.csv')
+```
+
+## Check dimension of dataset
+
+```{python}
+df.shape
+```
+## Check details of dataset (cols, rows, types, etc)
+
+```{python}
+df.info()
+```
+## Check first five rows
+
+```{python}
+df.head()
+```
+
+## Check last five rows
+
+```{python}
+df.tail()
+```
+
+## Calculate the sum of treatment
+
+```{python}
+df['treatment'].sum()
+```
+
+## Calculate a descriptive statistics
+
+```{python}
+df.describe()
+```
+
+## Count unique values in outcome column 
+
+```{python}
+df['outcome'].value_counts()
+```
